@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UCSI Education Event</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!--Log In Section-->
+    <section class="left-section">
+        <div id="left-cover" class="cover cover-hide">
+            <img src="img/cover1.png" alt="">
+            <h1>Welcome !</h1>
+            <h3>Already have an account ?</h3>
+            <button type="button" class="switch-btn" onclick="location.reload()">LOG IN</button>
+        </div>
+
+        <div id="left-form" class="form fade-in-element">
+            <h1>Log In</h1>
+            <form action="login.php" method="post">
+                <input type="text" name="user-name" class="input-box" placeholder="Student ID / Username">
+                <input type="password" name="user-pass" class="input-box" placeholder="Password">
+                <input type="submit" name="login-btn" class="btn" value="Log In">
+            </form>
+        </div>
+    </section>
+
+    <!--Sign Up Section-->
+    <section class="right-section">
+        <div id="right-cover" class="cover fade-in-element">
+            <img src="img/cover1.png" alt="">
+            <h1>Welcome !</h1>
+            <h3>Sign up as Non-UCSI Student</h3>
+            <button type="button" class="switch-btn" onclick="switchSignup()">SIGN UP</button>
+        </div>
+
+        <div id="right-form" class="form form-hide">
+            <h1>Sign Up</h1>
+            <form action="signup.php" method="post">
+                <input type="text" name="user-name" class="input-box" placeholder="Username">
+                <input type="email" name="user-email" class="input-box" placeholder="E-mail">
+                <input type="password" name="user-pass" class="input-box" placeholder="Password">
+                <input type="submit" name="signup-btn" class="btn" value="Sign Up">
+            </form>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
